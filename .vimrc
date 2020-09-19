@@ -8,31 +8,19 @@
 """"""""""""""""""""""""""""""
 call plug#begin('~/.vim/plugged')
 
-" ファイルオープンを便利に
-Plug 'Shougo/unite.vim'
-" Unite.vimで最近使ったファイルを表示できるようにする
-Plug 'Shougo/neomru.vim'
 " ファイルをtree表示してくれる
 Plug 'scrooloose/nerdtree'
-
-" Rails向けのコマンドを提供する
-" Plug 'tpope/vim-rails'
 " Ruby向けにendを自動挿入してくれる
 Plug 'tpope/vim-endwise'
-
 " コメントON/OFFを手軽に実行
 Plug 'tomtom/tcomment_vim'
 " シングルクオートとダブルクオートの入れ替え等
 Plug 'tpope/vim-surround'
-
-" インデントに色を付けて見やすくする
-Plug 'nathanaelkane/vim-indent-guides'
 let g:indent_guides_enable_on_vim_startup = 1
 " ログファイルを色づけしてくれる
 Plug 'vim-scripts/AnsiEsc.vim'
 " 行末の半角スペースを可視化
 Plug 'bronson/vim-trailing-whitespace'
-
 " ファイル検索
 Plug 'ctrlpvim/ctrlp.vim'
 " .slimにシンタックスハイライトが当たるようにした
@@ -44,7 +32,6 @@ call plug#end()
 " filetypeの検出を有効化する => vim-plugでは不要
 " filetype plugin indent on
 """"""""""""""""""""""""""""""
-" 個人オプション
 " nomal mode ban input japanese
 inoremap <ESC> <ESC>:set iminsert=0<CR>
 " ESCでIMEを確実にOFF
@@ -52,7 +39,7 @@ inoremap <ESC> <ESC>:set iminsert=0<CR>
 nnoremap ; :
 nnoremap : ;
 " esc keybind
-inoremap jk <esc>
+inoremap jj <esc>
 """"""""""""""""""""""""""""""
 " 各種オプションの設定
 """"""""""""""""""""""""""""""
@@ -123,31 +110,6 @@ set formatoptions=q
 set formatoptions=q
 " クラッシュ防止（http://superuser.com/questions/810622/vim-crashes-freezes-on-specific-files-mac-osx-mavericks）
 set synmaxcol=200
-""""""""""""""""""""""""""""""
-
-" http://blog.remora.cx/2010/12/vim-ref-with-unite.html
-""""""""""""""""""""""""""""""
-" Unite.vimの設定
-""""""""""""""""""""""""""""""
-" 入力モードで開始する
-let g:unite_enable_start_insert=1
-" バッファ一覧
-noremap <C-P> :Unite buffer<CR>
-" ファイル一覧
-noremap <C-N> :Unite -buffer-name=file file<CR>
-" 最近使ったファイルの一覧
-noremap <C-Z> :Unite file_mru<CR>
-" sourcesを「今開いているファイルのディレクトリ」とする
-noremap :uff :<C-u>UniteWithBufferDir file -buffer-name=file<CR>
-" ウィンドウを分割して開く
-au FileType unite nnoremap <silent> <buffer> <expr> <C-J> unite#do_action('split')
-au FileType unite inoremap <silent> <buffer> <expr> <C-J> unite#do_action('split')
-" ウィンドウを縦に分割して開く
-au FileType unite nnoremap <silent> <buffer> <expr> <C-K> unite#do_action('vsplit')
-au FileType unite inoremap <silent> <buffer> <expr> <C-K> unite#do_action('vsplit')
-" ESCキーを2回押すと終了する
-au FileType unite nnoremap <silent> <buffer> <ESC><ESC> :q<CR>
-au FileType unite inoremap <silent> <buffer> <ESC><ESC> <ESC>:q<CR>
 """"""""""""""""""""""""""""""
 
 """"""""""""""""""""""""""""""
