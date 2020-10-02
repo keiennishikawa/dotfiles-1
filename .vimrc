@@ -40,6 +40,8 @@ nnoremap ; :
 nnoremap : ;
 " esc keybind
 inoremap jj <esc>
+" vimで改行（空行）を挿入する
+nnoremap jk :<C-u>call append(expand('.'), '')<Cr>j
 """"""""""""""""""""""""""""""
 " 各種オプションの設定
 """"""""""""""""""""""""""""""
@@ -50,6 +52,7 @@ set cursorline
 " クリップボードを使えるようにする
 set clipboard+=unnamed
 " swqpファイルを作らない設定
+
 set noundofile
 " カーソルが何行目の何列目に置かれているかを表示する
 set ruler
@@ -133,4 +136,5 @@ imap ( ()<LEFT>
 
 " filetypeの自動検出(最後の方に書いた方がいいらしい)
 filetype on
+
 
