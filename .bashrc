@@ -1,0 +1,26 @@
+# Working Dirctory
+alias ubu='cd /Users/nishikawakeien/ubuntu'
+alias bsn='cd /Users/nishikawakeien/ubuntu/work/bstores_nextjs'
+alias bsr='cd /Users/nishikawakeien/ubuntu/work/bstores_rails'
+# GitHub
+alias gl='git log --oneline --decorate --graph --branches --tags --remotes'
+alias gr='git reset'
+alias co='git checkout'
+alias gs='git status'
+alias gc='git commit -m'
+alias add='git add .'
+alias log='git log'
+alias diff='git diff'
+alias push='git push origin HEAD'
+alias commit='git commit -am'
+alias rebase='git rebase -i'
+# Docker
+alias d='docker'
+alias dp='docker ps -l'
+alias di='docker images'
+alias dc='docker-compose'
+alias dcs='docker-compose run --service-ports'
+alias dcrw='docker-compose run web'
+alias dcra='docker-compose run api'
+# Linux
+alias hi='history | tail'
