@@ -41,7 +41,7 @@ nnoremap : ;
 " esc keybind
 inoremap jj <esc>
 " vimで改行（空行）を挿入する
-nnoremap jk :<C-u>call append(expand('.'), '')<Cr>j
+nnoremap ap :<C-u>call append(expand('.'), '')<Cr>j
 """"""""""""""""""""""""""""""
 " 各種オプションの設定
 """"""""""""""""""""""""""""""
@@ -81,7 +81,7 @@ set incsearch
 " 保存されていないファイルがあるときでも別のファイルを開けるようにする
 set hidden
 " 不可視文字を表示する
-set list
+" set list
 " タブと行の続きを可視化する
 set listchars=tab:>\ ,extends:<
 " 行番号を表示する
