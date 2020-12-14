@@ -31,10 +31,13 @@ alias pick='git cherry-pick'
 
 # Docker
 alias d='docker'
-alias dp='docker ps -l'
-alias di='docker images'
 alias dc='docker-compose'
 alias dcs='docker-compose run --service-ports'
+alias dps='docker ps -l'
+alias dcu='docker-compose up -d'
+alias dcd='docker-compose down'
+alias dcr='docker-compose restart'
+alias dimg='docker images'
 alias dcrw='docker-compose run web'
 alias dcra='docker-compose run api'
 
