@@ -1,15 +1,5 @@
-alias pull-up='git pull upstream'
-alias pull-or='git pull origin'
-alias push-up='git push upstream head'
-alias push-or='git push origin head'
-alias st'git status'
-alias stt='git status -uno'
-alias log='git log'
-alias log-one='git log --oneline'
-alias his='history | tail'
-alias rebase='git rebase -i'
-alias pick='git cherry-pick'
-alias ll='ls -la'
-alias add-u='git add -u'
-alias branch='git branch'
-
+# ローカルPCの独自設定
+## ファイルのアクセスショートカットなどに使う
+alias ubu='cd /Users/nishikawakeien/ubuntu'
+alias bsn='cd /Users/nishikawakeien/ubuntu/work/bstores_nextjs'
+alias bsr='cd /Users/nishikawakeien/ubuntu/work/bstores_rails'
