@@ -10,6 +10,10 @@
 2. cd ~/dotfiles
 3. ./setup.sh
 
+### aliasを個別に設定したいとき
+
+``.alias.sample``を``.alias``に変更する
+
 ### 便利各種vimプラグインの使い方
 
 #### ctlp.vim
