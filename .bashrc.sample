@@ -1,8 +1,3 @@
-# Working Dirctory
-# alias ubu='cd /Users/nishikawakeien/ubuntu'
-# alias bsn='cd /Users/nishikawakeien/ubuntu/work/bstores_nextjs'
-# alias bsr='cd /Users/nishikawakeien/ubuntu/work/bstores_rails'
-
 # GitHub
 ## status
 alias st='git status'
