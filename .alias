@@ -1,5 +1,2 @@
 # ローカルPCの独自設定
 ## ファイルのアクセスショートカットなどに使う
-alias ubu='cd /Users/nishikawakeien/ubuntu'
-alias bsn='cd /Users/nishikawakeien/ubuntu/work/bstores_nextjs'
-alias bsr='cd /Users/nishikawakeien/ubuntu/work/bstores_rails'
