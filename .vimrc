@@ -28,20 +28,14 @@ Plug 'slim-template/vim-slim'
 
 """"""""""""""""""""""""
 call plug#end()
-
-" filetypeの検出を有効化する => vim-plugでは不要
-" filetype plugin indent on
 """"""""""""""""""""""""""""""
-" nomal mode ban input japanese
-inoremap <ESC> <ESC>:set iminsert=0<CR>
-" ESCでIMEを確実にOFF
 " ノーマルモード時だけ ; と : を入れ替え
 nnoremap ; :
 nnoremap : ;
 " esc keybind
 inoremap jj <esc>
 " vimで改行（空行）を挿入する
-nnoremap jk :<C-u>call append(expand('.'), '')<Cr>j
+" nnoremap jk :<C-u>call append(expand('.'), '')<Cr>j
 """"""""""""""""""""""""""""""
 " 各種オプションの設定
 """"""""""""""""""""""""""""""
@@ -51,8 +45,7 @@ set cursorcolumn
 set cursorline
 " クリップボードを使えるようにする
 set clipboard+=unnamed
-" swqpファイルを作らない設定
-
+" swapファイルを作らない設定
 set noundofile
 " カーソルが何行目の何列目に置かれているかを表示する
 set ruler
@@ -136,5 +129,4 @@ imap ( ()<LEFT>
 
 " filetypeの自動検出(最後の方に書いた方がいいらしい)
 filetype on
-
 
