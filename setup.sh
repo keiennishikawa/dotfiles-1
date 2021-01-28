@@ -1,6 +1,7 @@
  #!/bin/bash
-
-  DOT_FILES=(.vimrc …)
+VIMRC="vimrc"
+ZSHRC="zshrc"
+DOT_FILES=($VIMRC $ZSHRC)
 
  for file in ${DOT_FILES[@]}
  do
